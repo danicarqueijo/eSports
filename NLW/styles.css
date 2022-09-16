@@ -1,0 +1,98 @@
+* /* reset*/ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/Fundo.jpg); /*onde minha img está*/
+  background-position: top center; /* posicionamento do fundo, ele tem que ficar no topo e centralizado*/
+  background-size: 100% auto; /*100% da tela e a altura automática (responsivo)*/
+  background-repeat: no-repeat; /*não repetir as imgs*/
+  background-color: #121214; /*fundo colorido (hexadecimal - 12 de vermelho,12 verde e 14 de azul)*/
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  max-width: 580px; /*tamanho máximo do cartão*/
+  width: 90%; /*relativo a tela*/
+  margin: auto;
+
+  display: grid;
+  gap: 24px;
+
+  margin-top: 32px;
+}
+
+body * {
+  font-family: "Inter", sans-serif;
+  line-height: 160%; /*altura da linha*/
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  width: 150px;
+  border-radius: 100%;
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 50.52%,
+    #e2d45c 100%
+  );
+  padding: 4px;
+  margin-top: 15px;
+}
+
+section {
+  color: #ffff;
+  background-image: linear-gradient(
+    90deg,
+    #9572fc 0%,
+    #43e7ad 50.52%,
+    #e2d45c 100%
+  );
+  padding-top: 4px;
+  border-radius: 10px;
+}
+
+section div {
+  background-color: #2a2634;
+  padding: 32px;
+  padding-top: 24px;
+  border-radius: 8px;
+}
+
+section h2 {
+  letter-spacing: -0.47px;
+}
+
+section p {
+  letter-spacing: -0.18px;
+  color: #a1a1a1;
+}
+
+ul {
+  display: flex; /*em relação as caixas de dentro*/
+  display: wrap; /* quebra de linha */
+  gap: 16px; /*só funciona o gap (espaçamento entre os lados dos li's) com o flex */
+
+  margin-top: 24px;
+}
+
+.games-list img {
+  width: 90px;
+  border-radius: 8px;
+}
+
+.channel-list img {
+  width: 70px;
+  border-radius: 50%;
+}
